@@ -1,5 +1,5 @@
 CC = c++
-NAME = test
+NAME = Tester
 CFLAGS = -fsanitize=address -g3
 SRCS = main.cpp Voca.cpp
 SRCS_OBJS = main.o Voca.o

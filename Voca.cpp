@@ -23,14 +23,14 @@ void	Voca::inOrderTest(int date)
 		{
 			if (answer == voca[date][i][j])
 			{
-				cout<<"맞았습니다 :)"<<endl;
+				cout<<"ʕ•̀ω•́ʔ✧ 맞았습니다."<<endl;
 				flag = false;
 			}
 		}
 		if (flag)
 		{
-			cout<<"틀렸습니다. ㅜㅡㅜ "<<voca[date][i][1]<<"의 뜻은";
-			for (int j = 1; j <  static_cast<int>(voca[date][i].size()); j++)
+			cout<<"ʕ;ᴥ;ʔ 틀렸습니다. "<<voca[date][i][1]<<"의 뜻은 ";
+			for (int j = 2; j <  static_cast<int>(voca[date][i].size()); j++)
 			{
 				cout<<voca[date][i][j]<<" ";
 			}
