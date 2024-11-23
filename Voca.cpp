@@ -30,11 +30,11 @@ void	Voca::inOrderTest(int date)
 		if (flag)
 		{
 			cout<<"ʕ;ᴥ;ʔ 틀렸습니다. "<<voca[date][i][1]<<"의 뜻은 ";
-			for (int j = 2; j <  static_cast<int>(voca[date][i].size()); j++)
+			for (int j = 2; j <  static_cast<int>(voca[date][i].size()) - 1; j++)
 			{
-				cout<<voca[date][i][j]<<" ";
+				cout<<"\""<<voca[date][i][j]<<"\""<<", ";
 			}
-			cout<<"입니다."<<endl;
+			cout<<"\""<<voca[date][i][static_cast<int>(voca[date][i].size()) - 1]<<"\""<<"입니다."<<endl;
 		}
 	}
 }
