@@ -33,7 +33,7 @@ int main()
 			break;		
 		}
 		else
-			cout<<"잘못된 값을 입력하셨습니다."<<command<<endl;
+			cout<<"ʕ;︵;ʔ 잘못된 값을 입력하셨습니다."<<endl;
 	}
 	return (0);
 }
