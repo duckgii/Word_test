@@ -12,6 +12,7 @@ void Voca::ClearCin() // 시그널처리 -> 안해주면 버퍼에 에러코드 
 void	Voca::inOrderTest(int date)
 {
 	string	answer;
+	vector<int>	wrong;
 	for (int i = 0; i < static_cast<int>(voca[date].size()); i++)
 	{
 		bool flag = true;
@@ -35,6 +36,29 @@ void	Voca::inOrderTest(int date)
 				cout<<"\""<<voca[date][i][j]<<"\""<<", ";
 			}
 			cout<<"\""<<voca[date][i][static_cast<int>(voca[date][i].size()) - 1]<<"\""<<"입니다."<<endl;
+			wrong.push_back(i);
+		}
+	}
+	cout<<"--------------------------------------------------------------------------------"<<endl;
+	cout<<endl<<endl<<endl;
+	cout<<"ʕ •ₒ• ʔ 시험이 종료되었습니다!!"<<std::endl;
+	if (wrong.size() == 0)
+		cout<<"ʕ≧ᴧ≦ʔ❀ 하나도 틀리지 않고 다 맞았습니다. 대단해요!!"<<endl;
+	else
+	{
+		cout<<"ʕ•́︿•̀ʔ 아쉽게도 "<<wrong.size()<<"개 틀리셨습니다."<<endl;
+		cout<<"ʕ´•ᴧ•`ʔ 틀린 내용은 다음과 같습니다."<<endl;
+		cout<<endl<<endl<<endl;
+		cout<<"--------------------------------------------------------------------------------"<<endl;
+		for (int i = 0; i < static_cast<int>(wrong.size()); i++)
+		{
+			//cout.width(30);
+			cout<<"ʕ•̀ᴥ•́ʔ "<<std::left<<std::setw(20)<<voca[date][wrong[i]][1]<<" : ";
+			for (int j = 2; j <  static_cast<int>(voca[date][wrong[i]].size()) - 1; j++)
+			{
+				cout<<"\""<<voca[date][wrong[i]][j]<<"\""<<",   ";
+			}
+			cout<<"\""<<voca[date][wrong[i]][static_cast<int>(voca[date][wrong[i]].size()) - 1]<<"\""<<endl;
 		}
 	}
 }
