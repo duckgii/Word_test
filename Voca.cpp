@@ -61,7 +61,7 @@ void	Voca::inOrderTest(int date)
 			}
 			cout<<"\""<<voca[date][wrong[i]][static_cast<int>(voca[date][wrong[i]].size()) - 1]<<"\""<<endl;
 		}
-		cout<<endl<<endl<<endl<<"틀린 부분만 다시 시험보시겠습니까?(1.예, 2.아니요) : ";
+		cout<<endl<<endl<<endl<<"ʕ◕ᴥ◕ʔ 틀린 부분만 다시 시험보시겠습니까?(1.예, 2.아니요) : ";
 		getline(std::cin, answer);
 		ClearCin();
 		if (answer == "1")
