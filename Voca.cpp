@@ -14,6 +14,7 @@ void	Voca::inOrderTest(int date)
 	int re;
 	string	answer;
 	vector<int>	wrong;
+	vector<string>	my_answer;
 	for (int i = 0; i < static_cast<int>(voca[date].size()); i++)
 	{
 		bool flag = true;
@@ -31,6 +32,7 @@ void	Voca::inOrderTest(int date)
 		}
 		if (flag)
 		{
+			my_answer.push_back(answer);
 			cout<<"ʕ;ᴥ;ʔ 틀렸습니다. "<<voca[date][i][1]<<"의 뜻은 ";
 			for (int j = 2; j <  static_cast<int>(voca[date][i].size()) - 1; j++)
 			{
@@ -60,6 +62,7 @@ void	Voca::inOrderTest(int date)
 				cout<<"\""<<voca[date][wrong[i]][j]<<"\""<<",   ";
 			}
 			cout<<"\""<<voca[date][wrong[i]][static_cast<int>(voca[date][wrong[i]].size()) - 1]<<"\""<<endl;
+			cout<<"ʕ•̀ᴥ•́ʔ "<<std::left<<std::setw(25)<<"내 입력 내용"<<" : "<<"\""<<my_answer[i]<<"\""<<endl<<endl<<endl;
 		}
 		cout<<endl<<endl<<endl<<"ʕ◕ᴥ◕ʔ 틀린 부분만 다시 시험보시겠습니까?(1.예, 2.아니요) : ";
 		getline(std::cin, answer);
