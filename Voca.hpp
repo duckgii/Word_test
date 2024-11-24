@@ -1,6 +1,7 @@
 #ifndef VOCA_HPP
 # define VOCA_HPP
 
+# include <iomanip>
 # include <iostream>
 # include <vector>
 # include <string>

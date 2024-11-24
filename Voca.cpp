@@ -38,6 +38,7 @@ void	Voca::inOrderTest(int date)
 			cout<<"\""<<voca[date][i][static_cast<int>(voca[date][i].size()) - 1]<<"\""<<"입니다."<<endl;
 			wrong.push_back(i);
 		}
+		cout<<endl<<endl;
 	}
 	cout<<"--------------------------------------------------------------------------------"<<endl;
 	cout<<endl<<endl<<endl;
@@ -52,7 +53,6 @@ void	Voca::inOrderTest(int date)
 		cout<<"--------------------------------------------------------------------------------"<<endl;
 		for (int i = 0; i < static_cast<int>(wrong.size()); i++)
 		{
-			//cout.width(30);
 			cout<<"ʕ•̀ᴥ•́ʔ "<<std::left<<std::setw(20)<<voca[date][wrong[i]][1]<<" : ";
 			for (int j = 2; j <  static_cast<int>(voca[date][wrong[i]].size()) - 1; j++)
 			{
