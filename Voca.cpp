@@ -92,6 +92,7 @@ void	Voca::inOrderTest(int date)
 					}
 					cout<<"\""<<voca[date][wrong[i]][static_cast<int>(voca[date][wrong[i]].size()) - 1]<<"\""<<"입니다."<<endl;
 				}
+				cout<<endl<<endl;
 			}
 		}
 	}

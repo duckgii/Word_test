@@ -171,7 +171,7 @@
 5:inform:~에게 알리다
 5:replacement:교체:후임자
 5:announcement:공고:발표
-5:department:(조직:기구의)부서
+5:department:(조직, 기구의)부서
 5:permanently:영구적으로:불변으로
 5:fulfill:(조건을)만족시키다:(약속,의무등을)지키다:이행하다
 5:outline:개요:설명하다:약술하다
@@ -183,12 +183,12 @@
 5:provider:공급자:제공자
 5:matter:문제:일
 5:expertise:전문지식:전문기술
-5:demonstrate:증명하다:(모형:실험등으로)설명하다
+5:demonstrate:증명하다:(모형, 실험등으로)설명하다
 5:remainder:나머지
 5:essential:필수적인:극히 중요한:본질적인
 5:divide:분배하다:나누다
 5:major:주요한:중대한
-5:compliance:(명령:법규에의)준수
+5:compliance:(명령, 법규에의)준수
 5:clarify:명확하게 하다
 5:face:(문제 등에)직면하다:향하다:마주보다
 5:follow:~을 따라가다:주시하다:(분명히)이해하다
@@ -204,7 +204,7 @@
 6:exhibition:전시회
 6:celebrity:유명인사:명사
 6:live:(라디오:TV가)생방송인
-6:improvise:(연주:연설 등을)즉흥적으로 하다:즉석에서 만들다.
+6:improvise:(연주, 연설 등을)즉흥적으로 하다:즉석에서 만들다.
 6:popular:인기있는
 6:donation:기증:기부
 6:alumni:동창생들:졸업생들
