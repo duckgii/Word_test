@@ -200,7 +200,7 @@
 5:advisable:바람직한:합당한
 5:concerned:염려하는:걱정하는:관련된
 5:speak:이야기 하다
-6:rest:쉬다,휴식:나머지
+6:rest:쉬다:휴식:나머지
 6:exhibition:전시회
 6:celebrity:유명인사:명사
 6:live:(라디오:TV가)생방송인
