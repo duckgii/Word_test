@@ -200,7 +200,7 @@
 5:advisable:바람직한:합당한
 5:concerned:염려하는:걱정하는:관련된
 5:speak:이야기 하다
-6:collection:소장품:수집물:징수:수금
+6:rest:쉬다,휴식:나머지
 6:exhibition:전시회
 6:celebrity:유명인사:명사
 6:live:(라디오:TV가)생방송인
@@ -214,7 +214,7 @@
 6:anniversary:기념일
 6:required:필수의:의무적인
 6:succeed:성공하다:뒤를 잇다
-6:rest:쉬다,휴식:나머지
+6:collection:소장품:수집물:징수:수금
 6:fund-raising:모금
 6:resume:재개하다:다시 시작하다
 6:issue:(출판물의)제 ~호:문제:쟁점
@@ -234,14 +234,14 @@
 6:beneficial:유익한:이로운
 6:upcoming:곧 있을:다가오는
 6:lend:빌려주다
-6:current:현재의,:현행의:통용되는
+6:current:현재의:현행의:통용되는
 6:local:지방의:고장의
 6:variety:다양성:변화
 6:advocate:옹호자
 6:contributor:기고가:공헌자
-6:defy:저항하다:(설명,묘사등이)거의 불가능하다
+6:defy:저항하다:(설명, 묘사등이)거의 불가능하다
 6:fascinating:매혹적인:황홀한
-6:showing:(영화:연극의)상영:전시
+6:showing:(영화, 연극의)상영:전시
 7:survey:설문조사
 7:analysis:분석
 7:respondent:응답자
