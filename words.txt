@@ -225,7 +225,7 @@
 6:specifically:명확하게:분명히:특히:특별히
 6:anonymous:익명의:이름을 모르는
 6:commit:헌신하다:전념하다
-6:information:유익한:정보를 주는
+6:informative:유익한:정보를 주는
 6:audience:청중:관중
 6:author:작가:저자
 6:note:주목하다:특별히 언급하다.
