@@ -12,6 +12,7 @@ int main()
 	{
 		cout<<"ʕᵔᴥᵔʔ 테스트할 날짜를 선택해주세요(1이상 30이하) : ";
 		getline(std::cin, date_s); //cin>>으로 받으면 내부 버퍼에 뭔가 개행이나 널문자 이런게 남아있다. -> 개행으로 확인 아마 원래 개행을 내부에 저장해두는 듯
+		obj.ClearCin();
 		date = atoi(date_s.c_str());
 		if (date < 1 || date > 30)
 			cout<<"ʕ;︵;ʔ 잘못된 입력입니다. 1일부터 30일까지 숫자만 입력해주세요"<<endl;

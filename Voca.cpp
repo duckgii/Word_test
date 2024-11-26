@@ -15,13 +15,14 @@ void	Voca::inOrderTest(int date)
 	string	answer;
 	vector<int>	wrong;
 	vector<string>	my_answer;
+
 	for (int i = 0; i < static_cast<int>(voca[date].size()); i++)
 	{
 		bool flag = true;
 
 		cout<<voca[date][i][1]<<" : ";
 		getline(std::cin, answer);
-		ClearCin();
+		Voca::ClearCin();
 		for (int j = 2; j <  static_cast<int>(voca[date][i].size()); j++)
 		{
 			if (answer == voca[date][i][j])
