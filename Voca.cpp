@@ -120,7 +120,7 @@ void	Voca::parse(void)
 	
 	
 	vector<vector<string> >	one_day;
-	char	date = '1';
+	int	date = 1;
 
 	filename = "words.txt";
 	voca.push_back(one_day);
@@ -133,14 +133,17 @@ void	Voca::parse(void)
 			vector<string>	one_word;
 
 			getline(readFile, line);
-			if (line[0] != date)
+			ss.str(line);
+			getline(ss, words, ':');
+			one_word.push_back(words);
+
+			if (atoi(words.c_str()) != date)
 			{
 				vector<vector<string> >	t;
 				voca.push_back(one_day);
 				one_day = t;
 				date += 1;
 			}
-			ss.str(line);
 			while (getline(ss, words, ':'))
 			{
 				one_word.push_back(words);
