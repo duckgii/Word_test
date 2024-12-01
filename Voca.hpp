@@ -18,10 +18,14 @@ class Voca
 		vector<vector<vector<string> > > voca;
 
 	public:
+		Voca();
+		int date;
 		void	ClearCin();
 		void	parse(void);
 		void	inOrderTest(int test);
 		void	randomTest(int test);
+		bool	checkWord(string input, int idx_i, int idx_j);
+		void	printWrongWord(vector<int>	wrong, vector<string>	my_answer);
 		void	oneByOneTest(int test);
 };
 

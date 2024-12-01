@@ -1,5 +1,10 @@
 #include "Voca.hpp"
 
+Voca::Voca()
+{
+	date = 0;
+}
+
 void Voca::ClearCin() // 시그널처리 -> 안해주면 버퍼에 에러코드 남아있어서 문제생긴다~
 {
 	if (cin.eof())
@@ -7,6 +12,30 @@ void Voca::ClearCin() // 시그널처리 -> 안해주면 버퍼에 에러코드 
 		cin.clear();
 		clearerr(stdin);
 	}
+}
+
+bool	Voca::checkWord(string input, int i, int j)
+{
+	if (input == voca[date][i][j])
+	{
+		cout<<"ʕ•̀ω•́ʔ✧ 맞았습니다."<<endl<<endl<<endl;
+		return (true);
+	}
+	else
+	{
+		cout<<"ʕ;ᴥ;ʔ 틀렸습니다. "<<voca[date][i][1]<<"의 뜻은 ";
+		for (int j = 2; j <  static_cast<int>(voca[date][i].size()) - 1; j++)
+		{
+			cout<<"\""<<voca[date][i][j]<<"\""<<", ";
+		}
+		cout<<"\""<<voca[date][i][static_cast<int>(voca[date][i].size()) - 1]<<"\""<<"입니다."<<endl<<endl<<endl;
+		return (false);
+	}
+}
+
+void	Voca::printWrongWord(vector<int>	wrong, vector<string>	my_answer)
+{
+
 }
 
 void	Voca::inOrderTest(int date)
@@ -25,28 +54,21 @@ void	Voca::inOrderTest(int date)
 		Voca::ClearCin();
 		for (int j = 2; j <  static_cast<int>(voca[date][i].size()); j++)
 		{
-			if (answer == voca[date][i][j])
-			{
-				cout<<"ʕ•̀ω•́ʔ✧ 맞았습니다."<<endl;
-				flag = false;
-			}
+			flag = checkWord(answer, i, j);
+			if (flag == true)
+				break;
 		}
-		if (flag)
+		if (!flag)
 		{
 			my_answer.push_back(answer);
-			cout<<"ʕ;ᴥ;ʔ 틀렸습니다. "<<voca[date][i][1]<<"의 뜻은 ";
-			for (int j = 2; j <  static_cast<int>(voca[date][i].size()) - 1; j++)
-			{
-				cout<<"\""<<voca[date][i][j]<<"\""<<", ";
-			}
-			cout<<"\""<<voca[date][i][static_cast<int>(voca[date][i].size()) - 1]<<"\""<<"입니다."<<endl;
 			wrong.push_back(i);
 		}
-		cout<<endl<<endl;
+		
 	}
-	cout<<"--------------------------------------------------------------------------------"<<endl;
-	cout<<endl<<endl<<endl;
+	cout<<"--------------------------------------------------------------------------------"<<endl<<endl<<endl<<endl;
+	
 	cout<<"ʕ •ₒ• ʔ 시험이 종료되었습니다!!"<<std::endl;
+	printWrongWord(wrong, my_answer);
 	if (wrong.size() == 0)
 		cout<<"ʕ≧ᴧ≦ʔ❀ 하나도 틀리지 않고 다 맞았습니다. 대단해요!!"<<endl;
 	else
