@@ -1,6 +1,6 @@
-CC = c++
+CC = g++
 NAME = Tester
-CFLAGS = -fsanitize=address -g3
+# CFLAGS = -fsanitize=address -g3
 SRCS = main.cpp Voca.cpp
 SRCS_OBJS = main.o Voca.o
 SRCS_HPPS =  Voca.hpp
@@ -18,9 +18,9 @@ re:
 	make all
 
 $(NAME) : $(SRCS_OBJS)
-		$(CC) $(CFLAGS) $^ -o $@
+		$(CC) $^ -o $@
 
 %.o: %.cpp $(SRCS_HPPS)
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) -c $< -o $@
 
 .PHONY : all clean fclean re
