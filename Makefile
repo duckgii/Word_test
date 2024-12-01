@@ -3,7 +3,7 @@ NAME = Tester
 # CFLAGS = -fsanitize=address -g3
 SRCS = main.cpp Voca.cpp
 SRCS_OBJS = main.o Voca.o
-SRCS_HPPS =  Voca.hpp
+# SRCS_HPPS =  Voca.hpp
 
 all : $(NAME)
 
@@ -20,7 +20,7 @@ re:
 $(NAME) : $(SRCS_OBJS)
 		$(CC) $^ -o $@
 
-%.o: %.cpp $(SRCS_HPPS)
+%.o: %.cpp #$(SRCS_HPPS)
 	$(CC) -c $< -o $@
 
 .PHONY : all clean fclean re
