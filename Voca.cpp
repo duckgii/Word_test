@@ -21,16 +21,7 @@ bool	Voca::checkWord(string input, int i, int j)
 		cout<<"ʕ•̀ω•́ʔ✧ 맞았습니다."<<endl<<endl<<endl;
 		return (true);
 	}
-	else
-	{
-		cout<<"ʕ;ᴥ;ʔ 틀렸습니다. "<<voca[date][i][1]<<"의 뜻은 ";
-		for (int j = 2; j <  static_cast<int>(voca[date][i].size()) - 1; j++)
-		{
-			cout<<"\""<<voca[date][i][j]<<"\""<<", ";
-		}
-		cout<<"\""<<voca[date][i][static_cast<int>(voca[date][i].size()) - 1]<<"\""<<"입니다."<<endl<<endl<<endl;
-		return (false);
-	}
+	return (false);
 }
 
 void	Voca::printWrongWord(vector<int>	wrong, vector<string>	my_answer)
@@ -60,6 +51,12 @@ void	Voca::inOrderTest(int date)
 		}
 		if (!flag)
 		{
+			cout<<"ʕ;ᴥ;ʔ 틀렸습니다. "<<voca[date][i][1]<<"의 뜻은 ";
+			for (int j = 2; j <  static_cast<int>(voca[date][i].size()) - 1; j++)
+			{
+				cout<<"\""<<voca[date][i][j]<<"\""<<", ";
+			}
+			cout<<"\""<<voca[date][i][static_cast<int>(voca[date][i].size()) - 1]<<"\""<<"입니다."<<endl<<endl<<endl;
 			my_answer.push_back(answer);
 			wrong.push_back(i);
 		}
