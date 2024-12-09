@@ -484,6 +484,7 @@
 12:prevent:~을 막다:~을 예방하다
 12:power:전력:전기
 12:chemical:화학제품
+12:minimize:최소화하다:축소하다
 13:complaint:불평
 13:deal:처리하다:거래하다:분배하다
 13:argumentative:논쟁적인:논쟁을 좋아하는
