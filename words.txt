@@ -536,12 +536,12 @@
 14:missing:분실된:없어진
 14:locate:(~의 위치를)찾아내다:~을 위치시키다
 14:approximately:대략
-14:duty:관세,세금:직무,의무
+14:duty:관세:세금:직무:의무
 14:process:과정:처리하다
 14:board:탑승하다:이사회
 14:comfortable:편안한
 14:declare:(세관에서)신고하다
-14:specify:명시하다 (specification 열거:명시:명세서)
+14:specify:명시하다
 14:depart:출발하다
 14:emergency:비상시:비상 사태
 14:passenger:승객
@@ -550,7 +550,7 @@
 14:tour:(공장,시설 등의)견학:짧은 여행
 14:carrier:항공사:수송기:수송 회사
 14:customarily:관례상:습관적으로
-14:confuse:혼란시키다 (refuse 거절하다:거부하다)
+14:confuse:혼란시키다
 14:arrive:도착하다
 14:brochure:(홍보용)소책자:브로셔
 14:involve:수반하다:포함하다:참여시키다
@@ -566,6 +566,9 @@
 14:proximity:가까움:근접함
 14:seating:(집합적)좌석 설비:좌석 배열
 14:unlimited:무제한의
+14:simply:그저:단지:간단히
+14:besides:게다가:뿐만 아니라:~외에
+14:traditionally:전통적으로
 15:proposal:제안:계획
 15:alliance:동맹:제휴
 15:stipulation:계약 조건
@@ -582,7 +585,7 @@
 15:initially:처음에:초기에
 15:expire:(계약등이)만료되다
 15:collaborate:협력하다:공동으로 일하다
-15:dedicate:전념하다:헌신하다:바치다(indicate 나타내다)
+15:dedicate:전념하다:헌신하다:바치다
 15:revised:수정된:변경된
 15:imperative:반드시 해야 하는:필수적인
 15:cooperatively:협력하여:협조적으로
