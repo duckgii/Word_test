@@ -578,7 +578,7 @@
 15:agreement:계약:협정:합의
 15:deadlock:교착 상태
 15:review:검토하다:재조사하다
-15:contract:계약(서),계약하다:수축하다
+15:contract:계약(서):계약하다:수축하다
 15:signature:서명
 15:originally:원래:처음에는
 15:direction:방향:지시:감독
