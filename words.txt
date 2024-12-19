@@ -609,6 +609,7 @@
 15:terminate:끝내다:종결시키다
 15:challenging:도전적인:힘든
 15:foundation:토대:기초
+15:pending:미결인:미정인:임박한
 16:completely:전적으로:완전히
 16:refuse:거절하다
 16:temporarily:일시적으로
